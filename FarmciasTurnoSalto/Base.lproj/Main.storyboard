@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FarmciasTurnoSalto" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRN-Hp-E2X">
+                                <rect key="frame" x="0.0" y="64" width="375" height="196"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="WuE-gK-gpY">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="196"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4d-hp-3yn">
+                                            <rect key="frame" x="150" y="157" width="74" height="30"/>
+                                            <state key="normal" title="btnLLamar"/>
+                                            <connections>
+                                                <action selector="btnLLamar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xd4-LL-xjq"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtA-hW-f5b">
+                                            <rect key="frame" x="232" y="157" width="61" height="30"/>
+                                            <state key="normal" title="btnMapa"/>
+                                            <connections>
+                                                <action selector="btnLLamar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Fg-Vq-5QR"/>
+                                                <action selector="btnMapa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DoT-cD-TZW"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKy-ju-tHT">
+                                            <rect key="frame" x="50" y="157" width="92" height="30"/>
+                                            <state key="normal" title="btnCompartir"/>
+                                            <connections>
+                                                <action selector="btnCompartir:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j9w-eb-SHC"/>
+                                                <action selector="btnLLamar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZPu-RV-0Yy"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="h4d-hp-3yn" firstAttribute="leading" secondItem="xKy-ju-tHT" secondAttribute="trailing" constant="8" id="HiA-od-u4t"/>
+                                        <constraint firstAttribute="bottom" secondItem="h4d-hp-3yn" secondAttribute="bottom" constant="9" id="ZNc-WA-TIr"/>
+                                        <constraint firstItem="xtA-hW-f5b" firstAttribute="leading" secondItem="h4d-hp-3yn" secondAttribute="trailing" constant="8" id="eID-cA-DL7"/>
+                                        <constraint firstItem="xKy-ju-tHT" firstAttribute="baseline" secondItem="xtA-hW-f5b" secondAttribute="baseline" id="egK-md-zNA"/>
+                                        <constraint firstAttribute="bottom" secondItem="xKy-ju-tHT" secondAttribute="bottom" constant="9" id="flA-Di-lGQ"/>
+                                    </constraints>
+                                </view>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rt2-hd-tbr">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Farmacia de Turno - Salto (B)" id="4Eo-lW-5Nm">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="iQV-rw-ffN">
+                                            <connections>
+                                                <action selector="btnShare:" destination="BYZ-38-t0r" id="6oT-1T-mpa"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblNombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrb-JB-vpV">
+                                <rect key="frame" x="0.0" y="128" width="375" height="39"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblHasta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lon-BM-o4i">
+                                <rect key="frame" x="8" y="182" width="359" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="A7D-Gd-p7t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DE TURNO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06q-YA-Bj0">
+                                <rect key="frame" x="0.0" y="71" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="n4h-7l-2cE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblDireccion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sad-TI-U1w">
+                                <rect key="frame" x="8" y="268" width="343" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dirección" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uk-lG-GtE">
+                                <rect key="frame" x="8" y="283" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5B2-9L-1dw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblTelefono" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Egn-HU-TZH">
+                                <rect key="frame" x="8" y="312" width="343" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teléfono" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kba-hN-HHg">
+                                <rect key="frame" x="8" y="327" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="qSb-yh-Ort"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sad-TI-U1w" firstAttribute="top" secondItem="nRN-Hp-E2X" secondAttribute="bottom" constant="8" symbolic="YES" id="0O3-fs-1Xx"/>
+                            <constraint firstItem="nRN-Hp-E2X" firstAttribute="leading" secondItem="wrb-JB-vpV" secondAttribute="leading" id="1gM-y7-2cg"/>
+                            <constraint firstItem="nRN-Hp-E2X" firstAttribute="top" secondItem="rt2-hd-tbr" secondAttribute="bottom" id="1mt-Vn-e44"/>
+                            <constraint firstItem="Egn-HU-TZH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-32" id="2rP-Dr-Q8a"/>
+                            <constraint firstItem="rt2-hd-tbr" firstAttribute="leading" secondItem="06q-YA-Bj0" secondAttribute="leading" id="Aq9-py-cSj"/>
+                            <constraint firstItem="kba-hN-HHg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-32" id="D0C-cx-fig"/>
+                            <constraint firstItem="wrb-JB-vpV" firstAttribute="top" secondItem="06q-YA-Bj0" secondAttribute="bottom" constant="36" id="G2a-sc-gQc"/>
+                            <constraint firstItem="9uk-lG-GtE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-32" id="GEJ-EM-hVl"/>
+                            <constraint firstItem="9uk-lG-GtE" firstAttribute="top" secondItem="lon-BM-o4i" secondAttribute="bottom" constant="80" id="GIo-kM-OwM"/>
+                            <constraint firstItem="sad-TI-U1w" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-32" id="Gi6-HN-Gcb"/>
+                            <constraint firstItem="rt2-hd-tbr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="H2q-C7-4rl"/>
+                            <constraint firstItem="wrb-JB-vpV" firstAttribute="centerX" secondItem="lon-BM-o4i" secondAttribute="centerX" id="JaD-1F-48s"/>
+                            <constraint firstItem="06q-YA-Bj0" firstAttribute="top" secondItem="rt2-hd-tbr" secondAttribute="bottom" constant="7" id="KOU-FY-2pZ"/>
+                            <constraint firstItem="06q-YA-Bj0" firstAttribute="leading" secondItem="wrb-JB-vpV" secondAttribute="leading" id="OLg-XU-peZ"/>
+                            <constraint firstItem="Egn-HU-TZH" firstAttribute="top" secondItem="9uk-lG-GtE" secondAttribute="bottom" constant="8" symbolic="YES" id="Q2w-gj-hie"/>
+                            <constraint firstItem="lon-BM-o4i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-8" id="RE2-Pf-gTI"/>
+                            <constraint firstItem="h4d-hp-3yn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-0.5" id="Ycq-w3-z7t"/>
+                            <constraint firstItem="kba-hN-HHg" firstAttribute="top" secondItem="9uk-lG-GtE" secondAttribute="bottom" constant="23" id="Yeo-1o-sN6"/>
+                            <constraint firstItem="rt2-hd-tbr" firstAttribute="trailing" secondItem="06q-YA-Bj0" secondAttribute="trailing" id="ZIL-5A-TDq"/>
+                            <constraint firstItem="06q-YA-Bj0" firstAttribute="trailing" secondItem="wrb-JB-vpV" secondAttribute="trailing" id="aGC-rq-Pwm"/>
+                            <constraint firstItem="sad-TI-U1w" firstAttribute="top" secondItem="lon-BM-o4i" secondAttribute="bottom" constant="65" id="iDX-IE-YRE"/>
+                            <constraint firstItem="nRN-Hp-E2X" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ifZ-bC-vbn"/>
+                            <constraint firstItem="lon-BM-o4i" firstAttribute="top" secondItem="wrb-JB-vpV" secondAttribute="bottom" constant="15" id="md0-h1-GpY"/>
+                            <constraint firstItem="sad-TI-U1w" firstAttribute="leading" secondItem="9uk-lG-GtE" secondAttribute="leading" id="oIY-bj-UIW"/>
+                            <constraint firstAttribute="trailing" secondItem="rt2-hd-tbr" secondAttribute="trailing" id="qG1-oi-dR9"/>
+                            <constraint firstItem="Egn-HU-TZH" firstAttribute="leading" secondItem="9uk-lG-GtE" secondAttribute="leading" id="r07-Jf-7Oy"/>
+                            <constraint firstItem="rt2-hd-tbr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rmL-4E-GeM"/>
+                            <constraint firstItem="Egn-HU-TZH" firstAttribute="leading" secondItem="kba-hN-HHg" secondAttribute="leading" id="yNI-Xh-wh3"/>
+                            <constraint firstItem="9uk-lG-GtE" firstAttribute="leading" secondItem="lon-BM-o4i" secondAttribute="leading" id="yTg-Xu-Yak"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="btnCompartir" destination="xKy-ju-tHT" id="pP8-xj-WJS"/>
+                        <outlet property="btnLlamar" destination="h4d-hp-3yn" id="0YI-mG-N69"/>
+                        <outlet property="btnMapa" destination="xtA-hW-f5b" id="hnb-if-FkS"/>
+                        <outlet property="lblDireccion" destination="sad-TI-U1w" id="lkD-v4-xJ7"/>
+                        <outlet property="lblHasta" destination="lon-BM-o4i" id="OYf-9y-0ad"/>
+                        <outlet property="lblNombreFarmacia" destination="wrb-JB-vpV" id="Whc-hy-uDu"/>
+                        <outlet property="lblTelefono" destination="Egn-HU-TZH" id="njN-d2-Uba"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="129.98500749625188"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06BFD1631E71F64E00522DAA /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFD1621E71F64E00522DAA /* LoadingIndicatorView.swift */; };
+		06C50EA91E7A08BA003A5711 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C50EA81E7A08BA003A5711 /* Utils.swift */; };
+		06C50EAC1E7A1091003A5711 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C50EAB1E7A1091003A5711 /* FontAwesome.swift */; };
+		06C50EAD1E7A10BC003A5711 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06C50EAA1E7A0FDA003A5711 /* FontAwesome.ttf */; };
+		06C65ED61E786005009D1A33 /* Farmacia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C65ED51E786005009D1A33 /* Farmacia.swift */; };
+		06CEA9071E6F5FE5008EDE2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEA9061E6F5FE5008EDE2A /* AppDelegate.swift */; };
+		06CEA9091E6F5FE5008EDE2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEA9081E6F5FE5008EDE2A /* ViewController.swift */; };
+		06CEA90C1E6F5FE5008EDE2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CEA90A1E6F5FE5008EDE2A /* Main.storyboard */; };
+		06CEA9111E6F5FE5008EDE2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CEA90F1E6F5FE5008EDE2A /* LaunchScreen.storyboard */; };
+		06CEA91C1E6F5FE5008EDE2A /* FarmciasTurnoSaltoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEA91B1E6F5FE5008EDE2A /* FarmciasTurnoSaltoTests.swift */; };
+		06CEA9271E6F5FE5008EDE2A /* FarmciasTurnoSaltoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEA9261E6F5FE5008EDE2A /* FarmciasTurnoSaltoUITests.swift */; };
+		06CFDF891E7100960014FF1A /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06CFDF881E7100960014FF1A /* Media.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06CEA9181E6F5FE5008EDE2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06CEA8FB1E6F5FE5008EDE2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06CEA9021E6F5FE5008EDE2A;
+			remoteInfo = FarmciasTurnoSalto;
+		};
+		06CEA9231E6F5FE5008EDE2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06CEA8FB1E6F5FE5008EDE2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06CEA9021E6F5FE5008EDE2A;
+			remoteInfo = FarmciasTurnoSalto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06BFD1621E71F64E00522DAA /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
+		06C50EA81E7A08BA003A5711 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		06C50EAA1E7A0FDA003A5711 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		06C50EAB1E7A1091003A5711 /* FontAwesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesome.swift; sourceTree = "<group>"; };
+		06C65ED51E786005009D1A33 /* Farmacia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Farmacia.swift; path = ../Farmacia.swift; sourceTree = "<group>"; };
+		06CEA9031E6F5FE5008EDE2A /* FarmciasTurnoSalto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarmciasTurnoSalto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06CEA9061E6F5FE5008EDE2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		06CEA9081E6F5FE5008EDE2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		06CEA90B1E6F5FE5008EDE2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		06CEA9101E6F5FE5008EDE2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		06CEA9121E6F5FE5008EDE2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06CEA9171E6F5FE5008EDE2A /* FarmciasTurnoSaltoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarmciasTurnoSaltoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06CEA91B1E6F5FE5008EDE2A /* FarmciasTurnoSaltoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmciasTurnoSaltoTests.swift; sourceTree = "<group>"; };
+		06CEA91D1E6F5FE5008EDE2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06CEA9221E6F5FE5008EDE2A /* FarmciasTurnoSaltoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarmciasTurnoSaltoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06CEA9261E6F5FE5008EDE2A /* FarmciasTurnoSaltoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmciasTurnoSaltoUITests.swift; sourceTree = "<group>"; };
+		06CEA9281E6F5FE5008EDE2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06CFDF881E7100960014FF1A /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06CEA9001E6F5FE5008EDE2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06CEA9141E6F5FE5008EDE2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06CEA91F1E6F5FE5008EDE2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06C50EA71E7A08A9003A5711 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				06C50EAA1E7A0FDA003A5711 /* FontAwesome.ttf */,
+				06C50EA81E7A08BA003A5711 /* Utils.swift */,
+				06BFD1621E71F64E00522DAA /* LoadingIndicatorView.swift */,
+				06C50EAB1E7A1091003A5711 /* FontAwesome.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		06CEA8FA1E6F5FE5008EDE2A = {
+			isa = PBXGroup;
+			children = (
+				06CEA9051E6F5FE5008EDE2A /* FarmciasTurnoSalto */,
+				06CEA91A1E6F5FE5008EDE2A /* FarmciasTurnoSaltoTests */,
+				06CEA9251E6F5FE5008EDE2A /* FarmciasTurnoSaltoUITests */,
+				06CEA9041E6F5FE5008EDE2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06CEA9041E6F5FE5008EDE2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06CEA9031E6F5FE5008EDE2A /* FarmciasTurnoSalto.app */,
+				06CEA9171E6F5FE5008EDE2A /* FarmciasTurnoSaltoTests.xctest */,
+				06CEA9221E6F5FE5008EDE2A /* FarmciasTurnoSaltoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06CEA9051E6F5FE5008EDE2A /* FarmciasTurnoSalto */ = {
+			isa = PBXGroup;
+			children = (
+				06C50EA71E7A08A9003A5711 /* Utils */,
+				06C65ED51E786005009D1A33 /* Farmacia.swift */,
+				06CEA9061E6F5FE5008EDE2A /* AppDelegate.swift */,
+				06CEA9081E6F5FE5008EDE2A /* ViewController.swift */,
+				06CEA90A1E6F5FE5008EDE2A /* Main.storyboard */,
+				06CFDF881E7100960014FF1A /* Media.xcassets */,
+				06CEA90F1E6F5FE5008EDE2A /* LaunchScreen.storyboard */,
+				06CEA9121E6F5FE5008EDE2A /* Info.plist */,
+			);
+			path = FarmciasTurnoSalto;
+			sourceTree = "<group>";
+		};
+		06CEA91A1E6F5FE5008EDE2A /* FarmciasTurnoSaltoTests */ = {
+			isa = PBXGroup;
+			children = (
+				06CEA91B1E6F5FE5008EDE2A /* FarmciasTurnoSaltoTests.swift */,
+				06CEA91D1E6F5FE5008EDE2A /* Info.plist */,
+			);
+			path = FarmciasTurnoSaltoTests;
+			sourceTree = "<group>";
+		};
+		06CEA9251E6F5FE5008EDE2A /* FarmciasTurnoSaltoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				06CEA9261E6F5FE5008EDE2A /* FarmciasTurnoSaltoUITests.swift */,
+				06CEA9281E6F5FE5008EDE2A /* Info.plist */,
+			);
+			path = FarmciasTurnoSaltoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06CEA9021E6F5FE5008EDE2A /* FarmciasTurnoSalto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06CEA92B1E6F5FE5008EDE2A /* Build configuration list for PBXNativeTarget "FarmciasTurnoSalto" */;
+			buildPhases = (
+				06CEA8FF1E6F5FE5008EDE2A /* Sources */,
+				06CEA9001E6F5FE5008EDE2A /* Frameworks */,
+				06CEA9011E6F5FE5008EDE2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FarmciasTurnoSalto;
+			productName = FarmciasTurnoSalto;
+			productReference = 06CEA9031E6F5FE5008EDE2A /* FarmciasTurnoSalto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06CEA9161E6F5FE5008EDE2A /* FarmciasTurnoSaltoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06CEA92E1E6F5FE5008EDE2A /* Build configuration list for PBXNativeTarget "FarmciasTurnoSaltoTests" */;
+			buildPhases = (
+				06CEA9131E6F5FE5008EDE2A /* Sources */,
+				06CEA9141E6F5FE5008EDE2A /* Frameworks */,
+				06CEA9151E6F5FE5008EDE2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06CEA9191E6F5FE5008EDE2A /* PBXTargetDependency */,
+			);
+			name = FarmciasTurnoSaltoTests;
+			productName = FarmciasTurnoSaltoTests;
+			productReference = 06CEA9171E6F5FE5008EDE2A /* FarmciasTurnoSaltoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		06CEA9211E6F5FE5008EDE2A /* FarmciasTurnoSaltoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06CEA9311E6F5FE5008EDE2A /* Build configuration list for PBXNativeTarget "FarmciasTurnoSaltoUITests" */;
+			buildPhases = (
+				06CEA91E1E6F5FE5008EDE2A /* Sources */,
+				06CEA91F1E6F5FE5008EDE2A /* Frameworks */,
+				06CEA9201E6F5FE5008EDE2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06CEA9241E6F5FE5008EDE2A /* PBXTargetDependency */,
+			);
+			name = FarmciasTurnoSaltoUITests;
+			productName = FarmciasTurnoSaltoUITests;
+			productReference = 06CEA9221E6F5FE5008EDE2A /* FarmciasTurnoSaltoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06CEA8FB1E6F5FE5008EDE2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Juan Ariel";
+				TargetAttributes = {
+					06CEA9021E6F5FE5008EDE2A = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					06CEA9161E6F5FE5008EDE2A = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 06CEA9021E6F5FE5008EDE2A;
+					};
+					06CEA9211E6F5FE5008EDE2A = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 06CEA9021E6F5FE5008EDE2A;
+					};
+				};
+			};
+			buildConfigurationList = 06CEA8FE1E6F5FE5008EDE2A /* Build configuration list for PBXProject "FarmciasTurnoSalto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06CEA8FA1E6F5FE5008EDE2A;
+			productRefGroup = 06CEA9041E6F5FE5008EDE2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06CEA9021E6F5FE5008EDE2A /* FarmciasTurnoSalto */,
+				06CEA9161E6F5FE5008EDE2A /* FarmciasTurnoSaltoTests */,
+				06CEA9211E6F5FE5008EDE2A /* FarmciasTurnoSaltoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06CEA9011E6F5FE5008EDE2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C50EAD1E7A10BC003A5711 /* FontAwesome.ttf in Resources */,
+				06CEA9111E6F5FE5008EDE2A /* LaunchScreen.storyboard in Resources */,
+				06CFDF891E7100960014FF1A /* Media.xcassets in Resources */,
+				06CEA90C1E6F5FE5008EDE2A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06CEA9151E6F5FE5008EDE2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06CEA9201E6F5FE5008EDE2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06CEA8FF1E6F5FE5008EDE2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C50EA91E7A08BA003A5711 /* Utils.swift in Sources */,
+				06CEA9091E6F5FE5008EDE2A /* ViewController.swift in Sources */,
+				06C65ED61E786005009D1A33 /* Farmacia.swift in Sources */,
+				06CEA9071E6F5FE5008EDE2A /* AppDelegate.swift in Sources */,
+				06C50EAC1E7A1091003A5711 /* FontAwesome.swift in Sources */,
+				06BFD1631E71F64E00522DAA /* LoadingIndicatorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06CEA9131E6F5FE5008EDE2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06CEA91C1E6F5FE5008EDE2A /* FarmciasTurnoSaltoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06CEA91E1E6F5FE5008EDE2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06CEA9271E6F5FE5008EDE2A /* FarmciasTurnoSaltoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06CEA9191E6F5FE5008EDE2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06CEA9021E6F5FE5008EDE2A /* FarmciasTurnoSalto */;
+			targetProxy = 06CEA9181E6F5FE5008EDE2A /* PBXContainerItemProxy */;
+		};
+		06CEA9241E6F5FE5008EDE2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06CEA9021E6F5FE5008EDE2A /* FarmciasTurnoSalto */;
+			targetProxy = 06CEA9231E6F5FE5008EDE2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		06CEA90A1E6F5FE5008EDE2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06CEA90B1E6F5FE5008EDE2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		06CEA90F1E6F5FE5008EDE2A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06CEA9101E6F5FE5008EDE2A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06CEA9291E6F5FE5008EDE2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		06CEA92A1E6F5FE5008EDE2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06CEA92C1E6F5FE5008EDE2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = FarmciasTurnoSalto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juan.FarmciasTurnoSalto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		06CEA92D1E6F5FE5008EDE2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = FarmciasTurnoSalto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juan.FarmciasTurnoSalto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		06CEA92F1E6F5FE5008EDE2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FarmciasTurnoSaltoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juan.FarmciasTurnoSaltoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FarmciasTurnoSalto.app/FarmciasTurnoSalto";
+			};
+			name = Debug;
+		};
+		06CEA9301E6F5FE5008EDE2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FarmciasTurnoSaltoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juan.FarmciasTurnoSaltoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FarmciasTurnoSalto.app/FarmciasTurnoSalto";
+			};
+			name = Release;
+		};
+		06CEA9321E6F5FE5008EDE2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FarmciasTurnoSaltoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juan.FarmciasTurnoSaltoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FarmciasTurnoSalto;
+			};
+			name = Debug;
+		};
+		06CEA9331E6F5FE5008EDE2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FarmciasTurnoSaltoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juan.FarmciasTurnoSaltoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FarmciasTurnoSalto;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06CEA8FE1E6F5FE5008EDE2A /* Build configuration list for PBXProject "FarmciasTurnoSalto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06CEA9291E6F5FE5008EDE2A /* Debug */,
+				06CEA92A1E6F5FE5008EDE2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06CEA92B1E6F5FE5008EDE2A /* Build configuration list for PBXNativeTarget "FarmciasTurnoSalto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06CEA92C1E6F5FE5008EDE2A /* Debug */,
+				06CEA92D1E6F5FE5008EDE2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06CEA92E1E6F5FE5008EDE2A /* Build configuration list for PBXNativeTarget "FarmciasTurnoSaltoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06CEA92F1E6F5FE5008EDE2A /* Debug */,
+				06CEA9301E6F5FE5008EDE2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06CEA9311E6F5FE5008EDE2A /* Build configuration list for PBXNativeTarget "FarmciasTurnoSaltoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06CEA9321E6F5FE5008EDE2A /* Debug */,
+				06CEA9331E6F5FE5008EDE2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06CEA8FB1E6F5FE5008EDE2A /* Project object */;
+}
