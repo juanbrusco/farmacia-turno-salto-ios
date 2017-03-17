@@ -216,6 +216,7 @@
 				TargetAttributes = {
 					06CEA9021E6F5FE5008EDE2A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = X3DC87Q46V;
 						ProvisioningStyle = Automatic;
 					};
 					06CEA9161E6F5FE5008EDE2A = {
@@ -441,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = X3DC87Q46V;
 				INFOPLIST_FILE = FarmciasTurnoSalto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.juan.FarmciasTurnoSalto;
@@ -454,6 +456,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = X3DC87Q46V;
 				INFOPLIST_FILE = FarmciasTurnoSalto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.juan.FarmciasTurnoSalto;

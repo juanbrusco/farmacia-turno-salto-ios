@@ -12,18 +12,55 @@ class ViewController: UIViewController {
 
     var farmacia: Farmacia?;
     var alertController: UIAlertController?;
+    var textCompartir: String?;
     
     @IBOutlet var btnLlamar: UIButton!
     @IBOutlet var btnMapa: UIButton!
     @IBOutlet var btnCompartir: UIButton!
     
     @IBAction func btnCompartir(_ sender: UIButton) {
+        
+        let nombre: String = self.farmacia!.nombre!;
+        let direccion: String = self.farmacia!.direccion!;
+        let telefono: String = self.farmacia!.telefono!;
+        
+        textCompartir = "La Farmacia de Turno en Salto es: \(nombre). Dirección: \(direccion). Teléfono: \(telefono).";
+        
+        // set up activity view controller
+        let textToShare = [ textCompartir ]
+        let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
+        // present the view controller
+        self.present(activityViewController, animated: true, completion: nil)
     }
     
     @IBAction func btnMapa(_ sender: UIButton) {
+        let url = URL(string: "http://maps.apple.com/?saddr=\(-34.294798),\(-60.247013)&daddr=\(-34.291980),\(-60.254931)")
+        let url2 = URL(string: "http://maps.apple.com/?saddr=Salto+Buenos+Aires+Argentina25+de+Mayo+755&daddr=Salto+Buenos+Aires+Argentina+Castelli+56")
+        let direccion: String = (self.farmacia?.direccion)!;
+        let newString = direccion.replacingOccurrences(of: " ", with: "+")
+        let url3 = URL(string: "http://maps.apple.com/?daddr=Salto,+\(newString)&dirflg=d&t=h")
+
+        UIApplication.shared.open(url3!, options: [:], completionHandler: nil)
+
     }
     
     @IBAction func btnLLamar(_ sender: UIButton) {
+        let telefono: String? = self.farmacia!.telefono!;
+        let newString = telefono?.replacingOccurrences(of: "(", with: "")
+        let newString2 = newString?.replacingOccurrences(of: ")", with: "")
+        let newString3 = newString2?.replacingOccurrences(of: "-", with: "")
+        let newString4 = newString3?.replacingOccurrences(of: " ", with: "")
+        let tel = "tel://\(newString4!)"
+
+        let url = URL(string: tel)
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url!)
+        }
+        
+
     }
     
     
@@ -35,7 +72,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func btnShare(_ sender: UIBarButtonItem) {
-        let text = "https://itunes.apple.com/es/app/ifarmacias/id520847248?mt=8"
+        let text = "Próximamente Farmacia de Turno (Salto) en la App Store"
         // set up activity view controller
         let textToShare = [ text ]
         let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
@@ -138,17 +175,20 @@ class ViewController: UIViewController {
                                 return
                         }
                         // now we have the todo, let's just print it to prove we can access it
-                        print("The todo is: " + parsedData.description)
+                        print(parsedData.description)
                         
-                        let arrJSON = parsedData["farmacias"];
-                        let aObject = arrJSON![0] as AnyObject;
                         
-                        self.farmacia = Farmacia(nombre:(aObject["nombre"] as! String),
-                                                direccion:(aObject["direccion"] as! String),
-                                                telefono:(aObject["telefono"] as! String),
-                                                fechaDesde:(aObject["fechaDesde"] as! String),
-                                                fechaHasta:(aObject["fechaHasta"] as! String));
+                        if let farmacias = parsedData["farmacias"] as? [[String:AnyObject]], !farmacias.isEmpty {
+                            let aObject = farmacias[0] as AnyObject? // now the compiler knows it's [String:AnyObject]
+                            // do something with channel
+                       
                         
+                        self.farmacia = Farmacia(nombre:(aObject?["nombre"] as! String),
+                                                direccion:(aObject?["direccion"] as! String),
+                                                telefono:(aObject?["telefono"] as! String),
+                                                fechaDesde:(aObject?["fechaDesde"] as! String),
+                                                fechaHasta:(aObject?["fechaHasta"] as! String));
+                         }
                         self.populateView();
                         
                         LoadingIndicatorView.hide();
