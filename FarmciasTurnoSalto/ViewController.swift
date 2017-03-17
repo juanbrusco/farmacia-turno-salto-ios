@@ -92,14 +92,14 @@ class ViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.appBecomeActive), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil );
         
 
-        btnLlamar.setFAIcon(icon: .FAPhone, iconSize: 30, forState: .normal)
-        btnLlamar.setFATitleColor(color: .white, forState: .normal)
+        btnLlamar.setFAIcon(icon: .FAPhone, iconSize: 45, forState: .normal)
+        btnLlamar.setFATitleColor(color: Utils.hexStringToUIColor(hex: "#EBEBF1"), forState: .normal)
         
-        btnMapa.setFAIcon(icon: .FALocationArrow, iconSize: 30, forState: .normal)
-        btnMapa.setFATitleColor(color: .white, forState: .normal)
+        btnMapa.setFAIcon(icon: .FALocationArrow, iconSize: 45, forState: .normal)
+        btnMapa.setFATitleColor(color: Utils.hexStringToUIColor(hex: "#EBEBF1"), forState: .normal)
         
-        btnCompartir.setFAIcon(icon: .FAShareAlt, iconSize: 30, forState: .normal)
-        btnCompartir.setFATitleColor(color: .white, forState: .normal)
+        btnCompartir.setFAIcon(icon: .FAShareAlt, iconSize: 45, forState: .normal)
+        btnCompartir.setFATitleColor(color: Utils.hexStringToUIColor(hex: "#EBEBF1"), forState: .normal)
         
         
         

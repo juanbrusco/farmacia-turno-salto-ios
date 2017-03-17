@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
         if statusBar.responds(to:#selector(setter: UIView.backgroundColor)) {
             statusBar.backgroundColor = Utils.hexStringToUIColor(hex: "#EBEBF1");
+            //statusBar.backgroundColor = Utils.hexStringToUIColor(hex: "#FFFFFF");
         }
         
         //Color texto e iconos de statusBar
