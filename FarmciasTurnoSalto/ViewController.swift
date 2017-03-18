@@ -18,64 +18,60 @@ class ViewController: UIViewController {
     @IBOutlet var btnMapa: UIButton!
     @IBOutlet var btnCompartir: UIButton!
     
-    @IBAction func btnCompartir(_ sender: UIButton) {
-        
-        let nombre: String = self.farmacia!.nombre!;
-        let direccion: String = self.farmacia!.direccion!;
-        let telefono: String = self.farmacia!.telefono!;
-        
-        textCompartir = "La Farmacia de Turno en Salto es: \(nombre). Dirección: \(direccion). Teléfono: \(telefono).";
-        
-        // set up activity view controller
-        let textToShare = [ textCompartir ]
-        let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
-        activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
-        // present the view controller
-        self.present(activityViewController, animated: true, completion: nil)
-    }
-    
-    @IBAction func btnMapa(_ sender: UIButton) {
-        let url = URL(string: "http://maps.apple.com/?saddr=\(-34.294798),\(-60.247013)&daddr=\(-34.291980),\(-60.254931)")
-        let url2 = URL(string: "http://maps.apple.com/?saddr=Salto+Buenos+Aires+Argentina25+de+Mayo+755&daddr=Salto+Buenos+Aires+Argentina+Castelli+56")
-        let direccion: String = (self.farmacia?.direccion)!;
-        let newString = direccion.replacingOccurrences(of: " ", with: "+")
-        let url3 = URL(string: "http://maps.apple.com/?daddr=Salto,+\(newString)&dirflg=d&t=h")
-
-        UIApplication.shared.open(url3!, options: [:], completionHandler: nil)
-
-    }
-    
-    @IBAction func btnLLamar(_ sender: UIButton) {
-        let telefono: String? = self.farmacia!.telefono!;
-        let newString = telefono?.replacingOccurrences(of: "(", with: "")
-        let newString2 = newString?.replacingOccurrences(of: ")", with: "")
-        let newString3 = newString2?.replacingOccurrences(of: "-", with: "")
-        let newString4 = newString3?.replacingOccurrences(of: " ", with: "")
-        let tel = "tel://\(newString4!)"
-
-        let url = URL(string: tel)
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.openURL(url!)
-        }
-        
-
-    }
-    
-    
     //labels
     @IBOutlet var lblNombreFarmacia: UILabel!
     @IBOutlet var lblHasta: UILabel!
     @IBOutlet var lblDireccion: UILabel!
     @IBOutlet var lblTelefono: UILabel!
     
+    @IBAction func btnCompartir(_ sender: UIButton) {
+        
+        let nombreCompartir: String = self.farmacia!.nombre!;
+        let direccionCompartir: String = self.farmacia!.direccion!;
+        let telefonoCompartir: String = self.farmacia!.telefono!;
+        
+        textCompartir = "La Farmacia de Turno en Salto es: \(nombreCompartir). Dirección: \(direccionCompartir). Teléfono: \(telefonoCompartir).";
+        
+        let textToShare = [ textCompartir ]
+        let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        self.present(activityViewController, animated: true, completion: nil)
+    }
+    
+    @IBAction func btnMapa(_ sender: UIButton) {
+        //let url = URL(string: "http://maps.apple.com/?saddr=\(-34.294798),\(-60.247013)&daddr=\(-34.291980),\(-60.254931)")
+        //let url2 = URL(string: "http://maps.apple.com/?saddr=Salto+Buenos+Aires+Argentina25+de+Mayo+755&daddr=Salto+Buenos+Aires+Argentina+Castelli+56")
+        let direccion: String = (self.farmacia?.direccion)!;
+        let direccionReplace = direccion.replacingOccurrences(of: " ", with: "+")
+        let direccionMapa = URL(string: "http://maps.apple.com/?daddr=Salto,+\(direccionReplace)&dirflg=d&t=h")
+
+        UIApplication.shared.open(direccionMapa!, options: [:], completionHandler: nil)
+
+    }
+    
+    @IBAction func btnLLamar(_ sender: UIButton) {
+        let telefono: String? = self.farmacia!.telefono!;
+        let telefonoReplace1 = telefono?.replacingOccurrences(of: "(", with: "")
+        let telefonoReplace2 = telefonoReplace1?.replacingOccurrences(of: ")", with: "")
+        let telefonoReplace3 = telefonoReplace2?.replacingOccurrences(of: "-", with: "")
+        let telefonoReplace4 = telefonoReplace3?.replacingOccurrences(of: " ", with: "")
+        let telefonoFinal = "tel://\(telefonoReplace4!)"
+
+        let urlLlamar = URL(string: telefonoFinal)
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(urlLlamar!, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(urlLlamar!)
+        }
+        
+
+    }
     
     @IBAction func btnShare(_ sender: UIBarButtonItem) {
-        let text = "Próximamente Farmacia de Turno (Salto) en la App Store"
+        let textApp = "Próximamente Farmacia de Turno (Salto) en la App Store"
         // set up activity view controller
-        let textToShare = [ text ]
-        let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+        let textToShareApp = [ textApp ]
+        let activityViewController = UIActivityViewController(activityItems: textToShareApp, applicationActivities: nil)
         activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
         
         // exclude some activity types from the list (optional)
