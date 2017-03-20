@@ -39,7 +39,6 @@
                                             <rect key="frame" x="232" y="160" width="61" height="30"/>
                                             <state key="normal" title="btnMapa"/>
                                             <connections>
-                                                <action selector="btnLLamar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Fg-Vq-5QR"/>
                                                 <action selector="btnMapa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DoT-cD-TZW"/>
                                             </connections>
                                         </button>
@@ -48,7 +47,6 @@
                                             <state key="normal" title="btnCompartir"/>
                                             <connections>
                                                 <action selector="btnCompartir:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j9w-eb-SHC"/>
-                                                <action selector="btnLLamar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZPu-RV-0Yy"/>
                                             </connections>
                                         </button>
                                     </subviews>
