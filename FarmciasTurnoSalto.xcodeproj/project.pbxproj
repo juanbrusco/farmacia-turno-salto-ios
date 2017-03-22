@@ -430,6 +430,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FarmaciasTurnoSalto;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,7 +446,7 @@
 				DEVELOPMENT_TEAM = X3DC87Q46V;
 				INFOPLIST_FILE = FarmciasTurnoSalto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.juan.FarmciasTurnoSalto;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juan.FarmaciasTurnoSalto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -459,7 +460,7 @@
 				DEVELOPMENT_TEAM = X3DC87Q46V;
 				INFOPLIST_FILE = FarmciasTurnoSalto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.juan.FarmciasTurnoSalto;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juan.FarmaciasTurnoSalto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
