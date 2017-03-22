@@ -29,6 +29,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    
+//      3D-Touch
+//    func handleShortcut( shortcutItem:UIApplicationShortcutItem ) -> Bool {
+//        print("Handling shortcut")
+//        
+//        var succeeded = false
+//        
+//        if( shortcutItem.type == "appshortcut.share-app" ) {
+//            
+//            let textApp = "Próximamente Farmacia de Turno (Salto) en la App Store"
+//            // set up activity view controller
+//            let textToShareApp = [ textApp ]
+//            let activityViewController = UIActivityViewController(activityItems: textToShareApp, applicationActivities: nil)
+//            // exclude some activity types from the list (optional)
+//            //activityViewController.excludedActivityTypes = [ UIActivityType.airDrop, UIActivityType.postToFacebook ]
+//            
+//            // present the view controller
+//            window!.rootViewController?.present(activityViewController, animated: true, completion: nil)
+//            
+//            succeeded = true
+//            
+//        }
+//        
+//        return succeeded
+//        
+//    }
+//    
+//    func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: (Bool) -> Void) {
+//        
+//        print("Application performActionForShortcutItem")
+//        completionHandler( handleShortcut(shortcutItem: shortcutItem) )
+//        
+//    }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
