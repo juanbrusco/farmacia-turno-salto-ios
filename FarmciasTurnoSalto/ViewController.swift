@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet var lblDireccion: UILabel!
     @IBOutlet var lblTelefono: UILabel!
     
+    
     @IBAction func btnCompartir(_ sender: UIButton) {
         
         let nombreCompartir: String = self.farmacia!.nombre!;
@@ -83,6 +84,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         //llama a un metodo al reabrir la app
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.appBecomeActive), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil );
